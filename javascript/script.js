@@ -27,11 +27,13 @@ const bonus_password = (`${user_name}${user_surname}${favourite_color}${favourit
     // funziona? - SI!
 console.log(bonus_password);
     // stampo in HTML
-document.getElementById("bonus-password").innerHTML = bonus_password;
+document.getElementById("bonus-1").innerHTML = bonus_password;
 
-
-
-
-
-
-
+// BONUS-2:
+    // generare un numero random -ok!
+document.getElementById("bonus-random-number").innerHTML = Math.floor(Math.random() * 100);
+    // e poi??
+const bonus_password_two = (`${user_name}${user_surname}${favourite_color}${Math.floor(Math.random() * 100)}`);
+console.log(bonus_password_two);
+    //stampo in HTML - yeeee!
+document.getElementById("bonus-2").innerHTML = bonus_password_two;
