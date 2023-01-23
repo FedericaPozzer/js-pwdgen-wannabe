@@ -44,3 +44,18 @@ const bonus_password_two = `${user_name}${user_surname}${favourite_color}${Math.
 console.log(bonus_password_two);
     //stampo in HTML - yeeee!
 document.getElementById("bonus-2").innerHTML = bonus_password_two;
+
+
+// NB:
+// Math.floor(Math.random() * 100);
+// ovvero
+// Math.floor (arrotonda per difetto, per arrotondare per eccesso usare Math.ceil)
+// INFATTI AVREI DOVUTO AGGIUNGERE +1
+// Math.random (seleziona un numero random tra 0 e 1)
+// *100 (moltiplica per 100, quindi un numero da 0 a 99)
+// e appunto il +1 è per avere anche il 100 nelle opzioni!
+// QUINDI:
+// Math.floor(Math.random() * 100 + 1);
+// E SE VOLESSI NUMERI DA 101 a 200? EASY:
+// Math.floor(Math.random() * 100 + 100) +1;
+
