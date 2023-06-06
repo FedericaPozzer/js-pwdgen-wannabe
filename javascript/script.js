@@ -25,8 +25,8 @@ document.getElementById("password").innerHTML = user_password;
 
 // BONUS-1:
 
-    // chiedo il numero preferito
-let favourite_number = prompt("quale è il tuo numero preferito?")
+    // chiedo il numero preferito (non metto il parseint perchè non devo fare calcoli)
+let favourite_number = prompt("quale è il tuo numero preferito?");
     // stampo in console - OK!
 console.log(`${favourite_number}`);
     // creo il bonus
@@ -53,7 +53,7 @@ document.getElementById("bonus-2").innerHTML = bonus_password_two;
 // INFATTI AVREI DOVUTO AGGIUNGERE +1
 // Math.random (seleziona un numero random tra 0 e 1)
 // *100 (moltiplica per 100, quindi un numero da 0 a 99)
-// e appunto il +1 è per avere anche il 100 nelle opzioni!
+// e appunto il +1 è per avere anche il 100 nelle opzioni (inizia a contare da 1)!
 // QUINDI:
 // Math.floor(Math.random() * 100 + 1);
 // E SE VOLESSI NUMERI DA 101 a 200? EASY:
